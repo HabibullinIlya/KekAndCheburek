@@ -5,5 +5,5 @@ import com.arellomobile.mvp.MvpView
 
 
 interface View:MvpView{
-    fun navigateToMessages()
+    fun toFriendsList()
 }

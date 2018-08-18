@@ -10,10 +10,11 @@ import com.arellomobile.mvp.presenter.PresenterType
 
 import kotlinx.android.synthetic.main.activity_main.*
 import xyz.ilyaxabibullin.common.R
-import xyz.ilyaxabibullin.common.messagehistory.FriendsListActivity
+import xyz.ilyaxabibullin.common.friendslist.FriendsListActivity
+
 
 open class MenuActivity: MvpAppCompatActivity() ,View{
-    @InjectPresenter(type = PresenterType.GLOBAL)
+    @InjectPresenter
     lateinit var presenter: MenuPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ open class MenuActivity: MvpAppCompatActivity() ,View{
         }
     }
 
-    override fun navigateToMessages() {
+    override fun toFriendsList() {
         var intent = Intent(this, FriendsListActivity::class.java)
         startActivity(intent)
     }

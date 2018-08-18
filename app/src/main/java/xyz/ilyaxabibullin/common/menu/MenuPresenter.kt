@@ -6,9 +6,9 @@ import com.arellomobile.mvp.MvpPresenter
 @InjectViewState
 class MenuPresenter: MvpPresenter<View>() {
     fun messagesBtnWasClicked() {
-        val VkApi = VkApiRequests()
-        VkApi.getFriends()
-        viewState.navigateToMessages()
+//        val VkApi = VkApiRequests()
+//        VkApi.getFriends()
+        viewState.toFriendsList()
     }
 
 }
