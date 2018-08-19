@@ -17,6 +17,9 @@ open class MenuActivity: MvpAppCompatActivity() ,View{
     @InjectPresenter
     lateinit var presenter: MenuPresenter
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
